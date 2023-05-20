@@ -1,36 +1,19 @@
 package main
 
-import (
-	"fmt"
-	"sync"
-)
-
 func main() {
-	// go sayHello()
+	// Mutex()
 
-	// go func() {
-	// 	println("Hello")
-	// }()
+	// RWMutex()
 
-	// hello := func() {
-	// 	println("Hello")
-	// }
+	// Cond()
 
-	// go hello()
+	// CondBroadCast()\
 
-	// time.Sleep(2000)
+	// Once()
 
-	var wg sync.WaitGroup
-	for _, salutation := range []string{"hello", "greetings", "good day"} {
-		wg.Add(1)
-		go func(salutation string) {
-			defer wg.Done()
-			fmt.Println(salutation)
-		}(salutation)
-	}
-	wg.Wait()
-}
+	// Pool()
 
-func sayHello() {
-	println("Hello")
+	// UnBlockingAllRoutines()
+
+	ForSelectLoop()
 }
